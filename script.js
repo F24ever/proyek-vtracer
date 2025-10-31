@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', async function() {
 
-    // PERBAIKAN FINAL LINK WASM (berdasarkan screenshot-mu):
+    // PERBAIKAN FINAL (GANTI CDN KE UNPKG):
     try {
-        await vectortracer.default('https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
+        await vectortracer.default('https://unpkg.com/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
     } catch (err) {
         console.error("Gagal memuat file VTracer .wasm!", err);
         alert("ERROR: Gagal memuat komponen inti VTracer. Coba refresh halaman.");
