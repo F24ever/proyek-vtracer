@@ -1,5 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
+// 1. TAMBAHKAN 'async' DI SINI
+document.addEventListener('DOMContentLoaded', async function() {
 
+    // 2. TAMBAHKAN BLOK 'try...catch' UNTUK MEMUAT FILE .wasm
+    // Ini adalah "bahan bakar" untuk VTracer-nya.
+    try {
+        await vectortracer.default('https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
+    } catch (err) {
+        console.error("Gagal memuat file VTracer .wasm!", err);
+        alert("ERROR: Gagal memuat komponen inti VTracer. Coba refresh halaman.");
+        return; // Hentikan eksekusi jika gagal
+    }
+    // --- AKHIR PERBAIKAN ---
+
+    
     // --- BAGIAN 1: LOGIKA LISENSI ---
     // (Tidak ada perubahan di bagian ini, sudah bagus)
     const KUNCI_RAHASIA_ANDA = "NDHADN-6BII6-BISBI23BICU-BKCSJ8BCKS";
@@ -28,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // --- BAGIAN 2: LOGIKA MESIN VTRACER ---
+    // (Kodemu di sini sudah SANGAT BAGUS! Tidak perlu diubah)
 
     // Ambil elemen aplikasi
     const inputGambar = document.getElementById('input-gambar');
@@ -37,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const tombolDownload = document.getElementById('tombol-download');
     
     // Variabel untuk menyimpan BANYAK data gambar
-    // Ini sekarang jadi array untuk menampung { data, nama }
     let daftarGambar = [];
 
     // --- FUNGSI BARU: Saat pengguna memilih gambar (BATCH) ---
@@ -93,35 +106,29 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // --- FUNGSI BARU: Helper untuk VTracer (INI ADALAH FIX UTAMA) ---
-    // Ini membungkus logika 'tick' yang rumit dalam Promise sederhana
     function prosesGambarVTracer(imageData, settings) {
         return new Promise((resolve, reject) => {
-            // Gunakan ColorImageConverter, BUKAN .convert()
             const converter = new vectortracer.ColorImageConverter(imageData, settings);
 
             function tick() {
                 try {
-                    // Cek progres
                     converter.progress();
                     
                     if (converter.isFinished()) {
-                        const result = converter.getResult(); // Ambil hasil SVG
-                        converter.free(); // Bebaskan memori
-                        resolve(result);  // Selesaikan Promise
+                        const result = converter.getResult(); 
+                        converter.free(); 
+                        resolve(result);  
                     } else {
-                        // Jika belum, cek lagi nanti.
-                        // setTimeout(tick, 0) membuatnya non-blocking
                         setTimeout(tick, 0); 
                     }
                 } catch (err) {
-                    converter.free(); // Bebaskan memori jika error
-                    reject(err); // Gagalkan Promise
+                    converter.free(); 
+                    reject(err); 
                 }
             }
             
-            // Mulai proses
             converter.init();
-            tick(); // Panggil 'tick' pertama
+            tick(); 
         });
     }
 
