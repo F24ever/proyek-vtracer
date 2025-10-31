@@ -1,7 +1,6 @@
-// --- PERUBAHAN BESAR ADA DI SINI ---
-// Kita import file _bg.js (BUKAN vectortracer.js)
-// Kita import 'init' (fungsi inisialisasi) dan 'ColorImageConverter' (kelas utamanya)
-import init, { ColorImageConverter } from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.js';
+// --- PERUBAHAN 1: CARA IMPORT ---
+// Kita import SEMUANYA sebagai 'vectortracer_bg'
+import * as vectortracer_bg from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.js';
 
 // --- BAGIAN 1: LOGIKA LISENSI ---
 // (Ini semua sama, tidak ada yg berubah)
@@ -26,28 +25,24 @@ async function inisialisasiAplikasi() {
     try {
         areaHasil.innerHTML = "<p>Memuat komponen inti VTracer...</p>";
         
-        // --- INI PERUBAHAN KEDUA ---
-        // Kita 'fetch' file .wasm secara manual menggunakan URL-nya
         const wasmResponse = await fetch('https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
         
-        // Kita panggil fungsi 'init' (dari import) dan berikan hasil fetch .wasm
-        // Ini akan "menghidupkan" modul WASM
-        await init(wasmResponse); 
+        // --- PERUBAHAN 2: CARA INISIALISASI ---
+        // Fungsi 'init' adalah 'default' export dari modul yg kita import
+        await vectortracer_bg.default(wasmResponse); 
         
         areaHasil.innerHTML = "<p>Komponen berhasil dimuat. Silakan pilih gambar.</p>";
     } catch (err) {
         console.error("Gagal memuat file VTracer .wasm!", err);
-        // Tampilkan error di dalam UI, JANGAN pakai alert
         areaHasil.innerHTML = `<p style="color:red; font-weight:bold;">ERROR: Gagal memuat komponen inti VTracer. Coba refresh halaman.</p>`;
-        // Nonaktifkan tombol-tombol aplikasi jika gagal
         document.getElementById('tombol-trace').disabled = true;
         document.getElementById('input-gambar').disabled = true;
-        return; // Hentikan fungsi jika gagal
+        return; 
     }
 
     // 3. SETELAH WASM BERHASIL, baru siapkan sisa aplikasi
     // --- BAGIAN 2: LOGIKA MESIN VTRACER ---
-    // (Ini semua sama, tidak ada yg berubah)
+    // (Ini semua sama)
     const inputGambar = document.getElementById('input-gambar');
     const infoFile = document.getElementById('info-file');
     const tombolTrace = document.getElementById('tombol-trace');
@@ -103,10 +98,10 @@ async function inisialisasiAplikasi() {
     // Fungsi inti untuk memproses gambar dengan VTracer
     function prosesGambarVTracer(imageData, settings) {
         return new Promise((resolve, reject) => {
-            // --- INI PERUBAHAN KETIGA ---
-            // Kita gunakan 'ColorImageConverter' yang sudah kita import di atas
-            // BUKAN 'vectortracer.ColorImageConverter'
-            const converter = new ColorImageConverter(imageData, settings);
+            
+            // --- PERUBAHAN 3: CARA MEMBUAT INSTANCE ---
+            // 'ColorImageConverter' adalah PROPERTI dari 'vectortracer_bg'
+            const converter = new vectortracer_bg.ColorImageConverter(imageData, settings);
             
             // (Sisa fungsi ini sama persis)
             function tick() {
