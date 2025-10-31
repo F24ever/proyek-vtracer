@@ -1,8 +1,5 @@
-// --- PERUBAHAN 1: CARA IMPORT ---
-// Kita import 2 hal:
-// 1. __wbg_set_wasm: Fungsi untuk "menyuapi" WASM ke Dapur
-// 2. BinaryImageConverter: Kelas aslinya (BUKAN ColorImageConverter)
-import { __wbg_set_wasm, BinaryImageConverter } from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.js';
+// --- PERUBAHAN 1: KITA IMPORT SEMUA FUNGSI 'DAPUR' ---
+import * as vectortracer_bg from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.js';
 
 // --- BAGIAN 1: LOGIKA LISENSI ---
 // (Ini semua sama, tidak ada yg berubah)
@@ -27,16 +24,23 @@ async function inisialisasiAplikasi() {
     try {
         areaHasil.innerHTML = "<p>Memuat komponen inti VTracer...</p>";
         
-        // --- PERUBAHAN 2: CARA INISIALISASI ---
-        // Kita fetch file .wasm (Si Koki)
+        // --- PERUBAHAN 2: INI ADALAH CARA YANG BENAR ---
+        
+        // Buat 'Import Object'. Ini adalah 'Si Dapur' ('_bg.js')
+        // yang akan kita berikan ke 'Si Koki' ('.wasm')
+        const importObject = {
+            './vectortracer_bg.js': vectortracer_bg
+        };
+
+        // Kita 'fetch' file .wasm (Si Koki)
         const wasmResponse = await fetch('https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
         
-        // Kita "masak" file .wasm mentah itu
-        const wasmModule = await WebAssembly.instantiateStreaming(wasmResponse);
+        // Kita "Nyalakan" Si Koki, dan kita "Suapi" dia dengan Si Dapur
+        // Ini akan menyelesaikan error 'Imports argument must be present'
+        const wasmModule = await WebAssembly.instantiateStreaming(wasmResponse, importObject);
         
-        // Kita panggil fungsi import-nya untuk "menghubungkan" Si Koki dengan Si Dapur
-        __wbg_set_wasm(wasmModule.instance.exports);
-        // TIDAK PERLU 'await init()' LAGI
+        // "Hubungkan" mereka berdua agar bisa saling memanggil
+        vectortracer_bg.__wbg_set_wasm(wasmModule.instance.exports);
         
         areaHasil.innerHTML = "<p>Komponen berhasil dimuat. Silakan pilih gambar.</p>";
     } catch (err) {
@@ -49,7 +53,6 @@ async function inisialisasiAplikasi() {
 
     // 3. SETELAH WASM BERHASIL, baru siapkan sisa aplikasi
     // --- BAGIAN 2: LOGIKA MESIN VTRACER ---
-    // (Ini semua sama)
     const inputGambar = document.getElementById('input-gambar');
     const infoFile = document.getElementById('info-file');
     const tombolTrace = document.getElementById('tombol-trace');
@@ -58,6 +61,7 @@ async function inisialisasiAplikasi() {
     let daftarGambar = []; 
 
     inputGambar.onchange = async function(e) {
+        // (Sisa kode ini SAMA PERSIS, tidak ada yg berubah)
         const files = e.target.files;
         if (!files || files.length === 0) {
             daftarGambar = [];
@@ -107,15 +111,12 @@ async function inisialisasiAplikasi() {
         return new Promise((resolve, reject) => {
             
             // --- PERUBAHAN 3: GUNAKAN NAMA YANG BENAR ---
-            // Ganti 'ColorImageConverter' menjadi 'BinaryImageConverter'
-            const converter = new BinaryImageConverter(imageData, settings);
+            // 'BinaryImageConverter' adalah properti dari 'vectortracer_bg'
+            const converter = new vectortracer_bg.BinaryImageConverter(imageData, settings);
             
-            // (Sisa fungsi ini sama persis)
             function tick() {
                 try {
-                    // --- PERUBAHAN 4: NAMA FUNGSI PROSES ---
-                    // Library ini sepertinya butuh 'tick()' BUKAN 'progress()'
-                    // Kita kembalikan ke 'tick()'
+                    // Gunakan 'tick()'
                     if (converter.tick()) { // tick() mengembalikan true jika selesai
                         const result = converter.getResult(); 
                         converter.free(); 
@@ -135,7 +136,7 @@ async function inisialisasiAplikasi() {
     }
 
     // Fungsi saat tombol "Proses" diklik
-    // (Ini semua sama, tidak ada yg berubah)
+    // (Sama persis)
     tombolTrace.onclick = async function() {
         if (!daftarGambar || daftarGambar.length === 0) {
             alert("Pilih gambar dulu, dong!");
@@ -147,9 +148,6 @@ async function inisialisasiAplikasi() {
         areaHasil.innerHTML = "<p>Sedang memproses... Harap tunggu...</p>";
         tombolDownload.classList.add('layar-sembunyi');
 
-        // --- PERUBAHAN 5: SESUAIKAN PENGATURAN ---
-        // Kita hanya teruskan 3 pengaturan utama sebagai 'settings'
-        // 'BinaryImageConverter' sepertinya menerima 'settings' sebagai argumen ke-2
         const settings = {
             filter_speckle: parseInt(document.getElementById('setting-speckle').value),
             color_precision: parseInt(document.getElementById('setting-color').value),
@@ -165,7 +163,6 @@ async function inisialisasiAplikasi() {
                 console.log(`Memproses ${item.nama} ${urutan}...`);
                 tombolTrace.innerText = `Memproses: ${item.nama} ${urutan}`;
                 
-                // Teruskan 'settings' ke fungsi proses
                 const hasilSVG = await prosesGambarVTracer(item.data, settings);
                 zip.file(`${item.nama}.svg`, hasilSVG);
             }
@@ -194,7 +191,7 @@ async function inisialisasiAplikasi() {
 
 
 // --- LOGIKA PEMERIKSAAN KUNCI (JALAN PERTAMA KALI) ---
-// (Ini semua sama, tidak ada yg berubah)
+// (Sama persis)
 if (localStorage.getItem('kunci_valid') === 'iya') {
     inisialisasiAplikasi(); 
 }
