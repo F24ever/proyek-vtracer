@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
 </head>
 <body>
 
-    <div id="layar-kunci">
-        <h1>Aplikasi VTracer Keren</h1>
+    <div id="layar-kunci" class="container">
+        <h1>🔒 Aplikasi VTracer Keren</h1>
         <p>Silakan masukkan Kunci Lisensi untuk membuka aplikasi.</p>
         <p>Belum punya kunci? Hubungi saya via WA di 08xx-xxxx-xxxx</p>
         <input type="password" id="input-kunci" placeholder="Masukkan kuncimu...">
@@ -17,24 +17,31 @@
         <p id="pesan-error" class="pesan-sembunyi">Kunci Salah! Coba lagi.</p>
     </div>
 
-    <div id="layar-aplikasi" class="layar-sembunyi">
-        <h1>VTracer Siap!</h1>
-        <p>Upload gambar (JPG/PNG) untuk diubah jadi SVG.</p>
+    <div id="layar-aplikasi" class="container layar-sembunyi">
+        <h1>✨ VTracer Siap!</h1>
+        <p>Upload satu atau beberapa gambar (JPG/PNG) untuk diubah jadi SVG.</p>
         
-        <input type="file" id="input-gambar" accept="image/jpeg,image/png">
+        <label for="input-gambar" class="tombol-file">
+            Pilih Gambar...
+            <input type="file" id="input-gambar" accept="image/jpeg,image/png" multiple>
+        </label>
+        <span id="info-file">(Belum ada file dipilih)</span>
+
         
         <h3>Pengaturan:</h3>
-        <div>
-            <label>Filter Bintik (0-20):</label>
-            <input type="number" id="setting-speckle" value="8" min="0" max="20">
-        </div>
-        <div>
-            <label>Presisi Warna (1-8):</label>
-            <input type="number" id="setting-color" value="6" min="1" max="8">
-        </div>
-        <div>
-            <label>Kehalusan Garis (0-10):</label>
-            <input type="number" id="setting-path" value="2" min="0" max="10">
+        <div class="grup-pengaturan">
+            <div>
+                <label for="setting-speckle">Filter Bintik (0-20):</label>
+                <input type="number" id="setting-speckle" value="8" min="0" max="20">
+            </div>
+            <div>
+                <label for="setting-color">Presisi Warna (1-8):</label>
+                <input type="number" id="setting-color" value="6" min="1" max="8">
+            </div>
+            <div>
+                <label for="setting-path">Kehalusan Garis (0-10):</label>
+                <input type="number" id="setting-path" value="2" min="0" max="10">
+            </div>
         </div>
 
         <button id="tombol-trace">Proses Jadi Vektor!</button>
@@ -43,11 +50,15 @@
         
         <h2>Hasil:</h2>
         <div id="area-hasil">
-            </div>
-        <a id="tombol-download" class="layar-sembunyi">Download Hasil SVG</a>
+            <p>Hasil proses akan muncul di sini.</p>
+        </div>
+        
+        <a id="tombol-download" class="tombol-download layar-sembunyi">Download Hasil</a>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/dist/index.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
