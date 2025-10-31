@@ -1,66 +1,141 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi VTracer Keren</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            margin-top: 15px;
+            display: none; /* Akan ditampilkan oleh JavaScript jika ada error */
+        }
+        .success-message {
+            color: green;
+            margin-top: 15px;
+            display: none; /* Akan ditampilkan oleh JavaScript jika berhasil */
+        }
+    </style>
 </head>
 <body>
-
-    <div id="layar-kunci" class="container">
-        <h1>🔒 Aplikasi VTracer Keren</h1>
+    <div class="container">
+        <h1>🔐 Aplikasi VTracer Keren</h1>
         <p>Silakan masukkan Kunci Lisensi untuk membuka aplikasi.</p>
         <p>Belum punya kunci? Hubungi saya via WA di 08xx-xxxx-xxxx</p>
-        <input type="password" id="input-kunci" placeholder="Masukkan kuncimu...">
-        <button id="tombol-buka">Buka Akses</button>
-        <p id="pesan-error" class="pesan-sembunyi">Kunci Salah! Coba lagi.</p>
+
+        <input type="text" id="licenseKey" placeholder="Masukkan kuncimu...">
+        <button id="accessButton">Buka Akses</button>
+
+        <p class="error-message" id="errorMessage"></p>
+        <p class="success-message" id="successMessage"></p>
     </div>
 
-    <div id="layar-aplikasi" class="container layar-sembunyi">
-        <h1>✨ VTracer Siap!</h1>
-        <p>Upload satu atau beberapa gambar (JPG/PNG) untuk diubah jadi SVG.</p>
-        
-        <label for="input-gambar" class="tombol-file">
-            Pilih Gambar...
-            <input type="file" id="input-gambar" accept="image/jpeg,image/png" multiple>
-        </label>
-        <span id="info-file">(Belum ada file dipilih)</span>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer.min.js"></script>
+    <script type="module">
+        import * as vectortracer from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer.min.js';
 
-        
-        <h3>Pengaturan:</h3>
-        <div class="grup-pengaturan">
-            <div>
-                <label for="setting-speckle">Filter Bintik (0-20):</label>
-                <input type="number" id="setting-speckle" value="8" min="0" max="20">
-            </div>
-            <div>
-                <label for="setting-color">Presisi Warna (1-8):</label>
-                <input type="number" id="setting-color" value="6" min="1" max="8">
-            </div>
-            <div>
-                <label for="setting-path">Kehalusan Garis (0-10):</label>
-                <input type="number" id="setting-path" value="2" min="0" max="10">
-            </div>
-        </div>
+        // Inisialisasi vectortracer saat modul dimuat
+        async function initializeVTracer() {
+            try {
+                // Asumsi vectortracer memiliki fungsi init() atau sejenisnya
+                // Anda mungkin perlu menyesuaikan ini berdasarkan dokumentasi vectortracer
+                await vectortracer.default(); // atau vectortracer.init() jika ada
+                console.log("VTracer komponen inti berhasil dimuat.");
+                document.getElementById('errorMessage').style.display = 'none'; // Sembunyikan pesan error jika ada sebelumnya
+            } catch (e) {
+                console.error("Gagal memuat atau menginisialisasi VTracer:", e);
+                document.getElementById('errorMessage').textContent = 'ERROR: Gagal memuat komponen inti VTracer. Coba refresh halaman.';
+                document.getElementById('errorMessage').style.display = 'block';
+            }
+        }
 
-        <button id="tombol-trace">Proses Jadi Vektor!</button>
+        initializeVTracer();
 
-        <hr>
-        
-        <h2>Hasil:</h2>
-        <div id="area-hasil">
-            <p>Hasil proses akan muncul di sini.</p>
-        </div>
-        
-        <a id="tombol-download" class="tombol-download layar-sembunyi">Download Hasil</a>
-    </div>
+        document.getElementById('accessButton').addEventListener('click', function() {
+            const licenseKey = document.getElementById('licenseKey').value;
+            // Di sini Anda akan menambahkan logika validasi kunci lisensi Anda
+            // Untuk demonstrasi, kita akan menggunakan kunci dummy
+            if (licenseKey === 'YOUR_SECRET_LICENSE_KEY') { // Ganti dengan kunci lisensi sebenarnya
+                document.getElementById('successMessage').textContent = 'Akses berhasil dibuka! Selamat datang.';
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('errorMessage').style.display = 'none';
+                // Lanjutkan ke fitur aplikasi Anda di sini
+                // Contoh: Redirect ke halaman lain atau tampilkan konten aplikasi
+                console.log("Akses dibuka!");
+            } else {
+                document.getElementById('errorMessage').textContent = 'Kunci Lisensi salah. Silakan coba lagi.';
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('successMessage').style.display = 'none';
+            }
+        });
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
-    
-    <script src="https://unpkg.com/vectortracer@0.1.2/pkg/vectortracer.js"></script>
-    
-    <script src="script.js" defer></script>
-    
+        // Contoh bagaimana Anda akan menggunakan vectortracer setelah diinisialisasi
+        // Ini hanya placeholder, Anda perlu menyesuaikan sesuai API vectortracer
+        async function convertImageToVector(imageData) {
+            if (vectortracer) {
+                try {
+                    // Pastikan vectortracer sudah diinisialisasi
+                    // await initializeVTracer(); // Tidak perlu panggil lagi jika sudah di initialize di awal
+
+                    // Contoh penggunaan (sesuaikan dengan API vectortracer)
+                    // const vectorData = await vectortracer.process(imageData);
+                    // console.log("Gambar berhasil dikonversi ke vektor:", vectorData);
+                    console.log("Fungsi konversi ke vektor siap digunakan (perlu implementasi API vectortracer).");
+                } catch (error) {
+                    console.error("Gagal mengkonversi gambar:", error);
+                }
+            } else {
+                console.error("Vectortracer belum dimuat atau diinisialisasi.");
+            }
+        }
+    </script>
 </body>
 </html>
