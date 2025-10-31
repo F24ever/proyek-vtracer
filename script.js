@@ -1,1 +1,188 @@
-function _0x225d(_0x5c5dd6,_0x4c2584){const _0x3fadac=_0x48aa();return _0x225d=function(_0x22377b,_0x57aa59){_0x22377b=_0x22377b-(-0xd*-0x2a5+-0x2649+0x4dc);let _0x4ac909=_0x3fadac[_0x22377b];return _0x4ac909;},_0x225d(_0x5c5dd6,_0x4c2584);}function _0x48aa(){const _0x573406=['20dziiGp','blob','Memproses:','addEventLi','name','tombol-dow','onload','nama','NDHADN-6BI','color:var(','yzNVz','createObje','layar-apli','disabled','classList','6927fxFxvm','4800624knOSub','tombol-tra','p\x20diproses','Converter','NieWL','satu\x20gamba','\x20file\x20dipi','ambar:','pesan-semb','ckfyM','input-gamb','error','or:\x20','split','BICU-BKCSJ','all','MRxYG','layar-semb','unyi','BcFmm','getContext','hasil-trac','vSqGs','files','JhwNN','Pilih\x20gamb','<p\x20style=\x22','\x20gambar...','\x20gambar\x20si','\x20gambar\x20be','VPRTf','gagAF','MFaJn','AgVOR','Proses\x20Jad','hiyfi','RevSz','Gambar\x20sia','kunci_vali','onerror','aca\x20file\x20g','info-file','setting-pa','eckle','href','ync','ap\x20diprose','nCZnK','Fpllf','ctURL','getResult','--warna-er','402rRIAjG','jaxXz','unggu...</','jimaL','wnload.</p','add','URL','IpuLf','BZTUP','kasi','1595396awhxUP','Download\x20','DpLOC','ip)','ba\x20lagi.','src','value','getElement','log','i\x20Vektor!','gambar.\x20Co','satu\x20file\x20','cjrKf','innerHTML','yVyFG','KCMaA','ybobw','5qcTxXI','height','ojvHG','ZfyJD','aca\x20salah\x20','input-kunc','le\x20ZIP...','e-batch.zi','677739osJJrN','isFinished','ar\x20dulu,\x20d','WWvwm','data','init','progress','YbdEw','SRpNO','4820884skADKd','pesan-erro','onclick','atTCn','lih)','roses\x20dan\x20','tombol-buk','</p>','oluIF','getImageDa','setting-sp','epVBS','readAsData','ror);\x22>Err','(Belum\x20ada','drawImage','DOMContent','nload','siap\x20di-do','YcRXa','width','remove','1640fBgFew','dAiZN','ById','from','rMDik','\x20Hasil\x20(.z','kuWPO','rhasil\x20dip','Membaca\x20','\x20error!\x20Co','setItem','message','Loaded','3366396ZnZgli','Membuat\x20fi','setting-co','download','aQyTA','result','canvas','DoiEt','target','length','ent','..\x20Harap\x20t','fzxYD','innerText','HuGdl','kCZil','GWfdK','jZNXN','mLVNj','memproses.','LVqcW','RgbaX','iya','lor','getItem','<p>Sedang\x20','.svg','ong!','Gagal\x20memb','Waduh,\x20ada','20993cWTCGt','layar-kunc','map','area-hasil','xzeST','...','VhtXX','Memproses\x20','onchange','BRhhK','file','knKJW','8BCKS','ColorImage','generateAs','stener','createElem','<p>Selesai','24PlEorz','btdWM','free','I6-BISBI23'];_0x48aa=function(){return _0x573406;};return _0x48aa();}const _0x2bb946=_0x225d;(function(_0x111d17,_0x27d60d){const _0x3f692f=_0x225d,_0x2f2602=_0x111d17();while(!![]){try{const _0x1ce4e5=-parseInt(_0x3f692f(0x195))/(-0x13*-0x1ee+0x1*-0x116e+-0x9*0x223)+parseInt(_0x3f692f(0x172))/(-0x1*0x1267+-0x265*0x8+0x2591)*(parseInt(_0x3f692f(0x13d))/(0x1d4e+-0x9*-0x2a+-0x1ec5))+parseInt(_0x3f692f(0x19e))/(0x125f+-0x6*0x578+0xe75*0x1)*(parseInt(_0x3f692f(0x18d))/(0x1502+0x20*0x13+0x1*-0x175d))+-parseInt(_0x3f692f(0x13e))/(0x1c29+-0xeaf+-0x15*0xa4)+-parseInt(_0x3f692f(0x118))/(0x4d5+-0xe82+-0x1b*-0x5c)*(parseInt(_0x3f692f(0x1b4))/(-0xa22+0x181e+-0x6fa*0x2))+parseInt(_0x3f692f(0xfa))/(0x259*-0xd+-0xd91+-0x5*-0x8d3)*(parseInt(_0x3f692f(0x12e))/(0x107c*0x2+-0x1*-0xc1d+-0x2d0b))+-parseInt(_0x3f692f(0x17c))/(-0x1e27+0x1520+0x2b*0x36)*(-parseInt(_0x3f692f(0x12a))/(0x22ac+-0x1fef+-0x2b1));if(_0x1ce4e5===_0x27d60d)break;else _0x2f2602['push'](_0x2f2602['shift']());}catch(_0x29303b){_0x2f2602['push'](_0x2f2602['shift']());}}}(_0x48aa,0x16*0x3a8e+-0x17777+0x5d107),document[_0x2bb946(0x131)+_0x2bb946(0x127)](_0x2bb946(0x1ae)+_0x2bb946(0xf9),function(){const _0x422291=_0x2bb946,_0x3cd366={'hiyfi':_0x422291(0x14f)+_0x422291(0x150),'Fpllf':function(_0x3d5345,_0x4b0a03){return _0x3d5345===_0x4b0a03;},'RevSz':_0x422291(0x164)+'d','RgbaX':_0x422291(0x110),'WWvwm':function(_0x4d4e6a){return _0x4d4e6a();},'LVqcW':_0x422291(0x146)+_0x422291(0x150),'BRhhK':_0x422291(0x100),'nCZnK':function(_0x4d323b,_0x212660){return _0x4d323b(_0x212660);},'SRpNO':function(_0x3b9c34,_0x7f3ed9){return _0x3b9c34===_0x7f3ed9;},'gagAF':_0x422291(0x1ac)+_0x422291(0x144)+_0x422291(0x1a2),'dAiZN':_0x422291(0x163)+_0x422291(0x140)+':','ZfyJD':_0x422291(0x116)+_0x422291(0x166)+_0x422291(0x145),'knKJW':_0x422291(0x116)+_0x422291(0x191)+_0x422291(0x143)+'r.','fzxYD':function(_0x556401,_0x189649){return _0x556401(_0x189649);},'mLVNj':_0x422291(0x116)+_0x422291(0x191)+_0x422291(0x187)+_0x422291(0x186)+_0x422291(0x180),'vSqGs':function(_0x48266f,_0x567fdd){return _0x48266f(_0x567fdd);},'BcFmm':function(_0x345f70,_0x36d592,_0x48c2a6){return _0x345f70(_0x36d592,_0x48c2a6);},'KCMaA':function(_0x5cf6f2,_0x28262d){return _0x5cf6f2(_0x28262d);},'jZNXN':_0x422291(0x157)+_0x422291(0x197)+_0x422291(0x115),'epVBS':_0x422291(0x113)+_0x422291(0x10d)+_0x422291(0x105)+_0x422291(0x174)+'p>','yVyFG':function(_0x1fd632,_0x426600){return _0x1fd632(_0x426600);},'xzeST':_0x422291(0x1a8)+_0x422291(0x169),'BZTUP':function(_0x19ea72,_0x4beb70){return _0x19ea72(_0x4beb70);},'JhwNN':_0x422291(0xfc)+_0x422291(0x111),'atTCn':function(_0x1e3e52,_0x264e47){return _0x1e3e52(_0x264e47);},'btdWM':_0x422291(0x168)+'th','ybobw':function(_0x55c12a,_0x16371c){return _0x55c12a<_0x16371c;},'ckfyM':function(_0x53d8c5,_0x2b010a){return _0x53d8c5+_0x2b010a;},'jaxXz':_0x422291(0xfb)+_0x422291(0x193),'cjrKf':_0x422291(0x12f),'HuGdl':_0x422291(0x117)+_0x422291(0xf6)+_0x422291(0x180),'DpLOC':_0x422291(0x160)+_0x422291(0x185),'GWfdK':_0x422291(0x136)+_0x422291(0x12d)+_0x422291(0x14c)+_0x422291(0x124),'kuWPO':_0x422291(0x119)+'i','VPRTf':_0x422291(0x13a)+_0x422291(0x17b),'aQyTA':_0x422291(0x192)+'i','yzNVz':_0x422291(0x1a4)+'a','YcRXa':_0x422291(0x19f)+'r','MFaJn':function(_0x3a0bbe,_0x5eba4e){return _0x3a0bbe===_0x5eba4e;},'YbdEw':_0x422291(0x148)+'ar','DoiEt':_0x422291(0x167),'rMDik':_0x422291(0x13f)+'ce','jimaL':_0x422291(0x11b),'IpuLf':_0x422291(0x133)+_0x422291(0x1af)},_0x3405dc=_0x3cd366[_0x422291(0x10a)],_0x15d020=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x1ba)]),_0x463650=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x15c)]),_0x3c2154=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0xfe)]),_0x3a54fe=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x138)]),_0x174bd1=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x1b1)]);function _0x1dd0dd(){const _0x4e4109=_0x422291;_0x15d020[_0x4e4109(0x13c)][_0x4e4109(0x177)](_0x3cd366[_0x4e4109(0x161)]),_0x463650[_0x4e4109(0x13c)][_0x4e4109(0x1b3)](_0x3cd366[_0x4e4109(0x161)]);}_0x3cd366[_0x422291(0x15e)](localStorage[_0x422291(0x112)](_0x3cd366[_0x422291(0x162)]),_0x3cd366[_0x422291(0x10f)])&&_0x3cd366[_0x422291(0x198)](_0x1dd0dd);_0x3a54fe[_0x422291(0x1a0)]=function(){const _0x24bca3=_0x422291;_0x3cd366[_0x24bca3(0x16e)](_0x3c2154[_0x24bca3(0x182)],_0x3405dc)?(localStorage[_0x24bca3(0xf7)](_0x3cd366[_0x24bca3(0x162)],_0x3cd366[_0x24bca3(0x10f)]),_0x3cd366[_0x24bca3(0x198)](_0x1dd0dd)):_0x174bd1[_0x24bca3(0x13c)][_0x24bca3(0x1b3)](_0x3cd366[_0x24bca3(0x10e)]);};const _0x2dfcde=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x19c)]),_0x181e08=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x101)]),_0x5ded94=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x1b8)]),_0x39c819=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x175)]),_0x117e65=document[_0x422291(0x183)+_0x422291(0x1b6)](_0x3cd366[_0x422291(0x179)]);let _0x26ea51=[];_0x2dfcde[_0x422291(0x120)]=async function(_0x31151b){const _0x1c5321=_0x422291,_0x4fd5d8=_0x31151b[_0x1c5321(0x102)][_0x1c5321(0x155)];if(!_0x4fd5d8||_0x3cd366[_0x1c5321(0x19d)](_0x4fd5d8[_0x1c5321(0x103)],0x106+0x2*-0x4e1+0x1a*0x56)){_0x26ea51=[],_0x181e08[_0x1c5321(0x107)]=_0x3cd366[_0x1c5321(0x15d)];return;}_0x181e08[_0x1c5321(0x107)]=_0x1c5321(0xf5)+_0x4fd5d8[_0x1c5321(0x103)]+_0x1c5321(0x159),_0x26ea51=[];const _0x30d9f0=Array[_0x1c5321(0x1b7)](_0x4fd5d8)[_0x1c5321(0x11a)](_0x59d43a=>{const _0x170e09=_0x1c5321,_0x132c61={'VhtXX':_0x3cd366[_0x170e09(0x121)],'NieWL':function(_0x547959,_0x2231c7){const _0x300317=_0x170e09;return _0x3cd366[_0x300317(0x16d)](_0x547959,_0x2231c7);}};return new Promise((_0x2d5d0,_0x22aacc)=>{const _0xffb4cc=_0x170e09,_0x5c9235={'AgVOR':_0x132c61[_0xffb4cc(0x11e)],'oluIF':function(_0x2b8ae4,_0x3c1a1d){const _0x499ba3=_0xffb4cc;return _0x132c61[_0x499ba3(0x142)](_0x2b8ae4,_0x3c1a1d);}},_0x57a051=new FileReader();_0x57a051[_0xffb4cc(0x134)]=function(_0x5bf247){const _0x124c3b=_0xffb4cc,_0x115caf=new Image();_0x115caf[_0x124c3b(0x134)]=function(){const _0x47a3c5=_0x124c3b,_0x536b81=document[_0x47a3c5(0x128)+_0x47a3c5(0x104)](_0x5c9235[_0x47a3c5(0x15f)]);_0x536b81[_0x47a3c5(0x1b2)]=_0x115caf[_0x47a3c5(0x1b2)],_0x536b81[_0x47a3c5(0x18e)]=_0x115caf[_0x47a3c5(0x18e)];const _0x19933c=_0x536b81[_0x47a3c5(0x152)]('2d');_0x19933c[_0x47a3c5(0x1ad)](_0x115caf,-0x7*0xdd+0x2ab*0x1+0x1*0x360,0x700+-0x237b+-0x1*-0x1c7b);const _0x50d68b=_0x19933c[_0x47a3c5(0x1a7)+'ta'](-0xe*0xf3+0x18*0x2+0x68d*0x2,0x35*-0x9c+0x3*0xb34+0x54*-0x4,_0x115caf[_0x47a3c5(0x1b2)],_0x115caf[_0x47a3c5(0x18e)]),_0x1d44b4=_0x59d43a[_0x47a3c5(0x132)][_0x47a3c5(0x14b)]('.')[-0xa*-0x21f+0x2357+-0x388d];_0x5c9235[_0x47a3c5(0x1a6)](_0x2d5d0,{'data':_0x50d68b,'nama':_0x1d44b4});},_0x115caf[_0x124c3b(0x165)]=_0x22aacc,_0x115caf[_0x124c3b(0x181)]=_0x5bf247[_0x124c3b(0x102)][_0x124c3b(0xff)];},_0x57a051[_0xffb4cc(0x165)]=_0x22aacc,_0x57a051[_0xffb4cc(0x1aa)+_0xffb4cc(0x178)](_0x59d43a);});});try{_0x26ea51=await Promise[_0x1c5321(0x14d)](_0x30d9f0),_0x181e08[_0x1c5321(0x107)]=_0x26ea51[_0x1c5321(0x103)]+(_0x1c5321(0x15a)+_0x1c5321(0x16c)+'s!'),console[_0x1c5321(0x184)](_0x3cd366[_0x1c5321(0x1b5)],_0x26ea51);}catch(_0x277de7){console[_0x1c5321(0x149)](_0x3cd366[_0x1c5321(0x190)],_0x277de7),_0x181e08[_0x1c5321(0x107)]=_0x3cd366[_0x1c5321(0x123)],_0x3cd366[_0x1c5321(0x106)](alert,_0x3cd366[_0x1c5321(0x10c)]);}};function _0x322f75(_0x4dcdbb,_0x47d48c){return new Promise((_0x45e4aa,_0x3f21bf)=>{const _0x4a2038=_0x225d,_0x371887={'MRxYG':function(_0x5e40ba,_0x5933f2){const _0x2259e1=_0x225d;return _0x3cd366[_0x2259e1(0x154)](_0x5e40ba,_0x5933f2);},'kCZil':function(_0x2ed1f3,_0x3064b5,_0x4002ec){const _0x333f24=_0x225d;return _0x3cd366[_0x333f24(0x151)](_0x2ed1f3,_0x3064b5,_0x4002ec);},'ojvHG':function(_0x5d7f94,_0x7b3b99){const _0x33c851=_0x225d;return _0x3cd366[_0x33c851(0x18b)](_0x5d7f94,_0x7b3b99);}},_0x382d0f=new vectortracer[(_0x4a2038(0x125))+(_0x4a2038(0x141))](_0x4dcdbb,_0x47d48c);function _0x618cf0(){const _0x540777=_0x4a2038;try{_0x382d0f[_0x540777(0x19b)]();if(_0x382d0f[_0x540777(0x196)]()){const _0x2267e3=_0x382d0f[_0x540777(0x170)]();_0x382d0f[_0x540777(0x12c)](),_0x371887[_0x540777(0x14e)](_0x45e4aa,_0x2267e3);}else _0x371887[_0x540777(0x109)](setTimeout,_0x618cf0,-0x828+-0x97f*-0x1+-0x1*0x157);}catch(_0x5ee46c){_0x382d0f[_0x540777(0x12c)](),_0x371887[_0x540777(0x18f)](_0x3f21bf,_0x5ee46c);}}_0x382d0f[_0x4a2038(0x19a)](),_0x3cd366[_0x4a2038(0x198)](_0x618cf0);});}_0x5ded94[_0x422291(0x1a0)]=async function(){const _0x53afba=_0x422291;if(!_0x26ea51||_0x3cd366[_0x53afba(0x19d)](_0x26ea51[_0x53afba(0x103)],-0x2*0x1213+0x3e0*-0x2+0x15f3*0x2)){_0x3cd366[_0x53afba(0x16d)](alert,_0x3cd366[_0x53afba(0x10b)]);return;}_0x5ded94[_0x53afba(0x107)]=_0x53afba(0x11f)+_0x26ea51[_0x53afba(0x103)]+_0x53afba(0x159),_0x5ded94[_0x53afba(0x13b)]=!![],_0x39c819[_0x53afba(0x189)]=_0x3cd366[_0x53afba(0x1a9)],_0x117e65[_0x53afba(0x13c)][_0x53afba(0x177)](_0x3cd366[_0x53afba(0x161)]);const _0x311d16={'filter_speckle':_0x3cd366[_0x53afba(0x18a)](parseInt,document[_0x53afba(0x183)+_0x53afba(0x1b6)](_0x3cd366[_0x53afba(0x11c)])[_0x53afba(0x182)]),'color_precision':_0x3cd366[_0x53afba(0x17a)](parseInt,document[_0x53afba(0x183)+_0x53afba(0x1b6)](_0x3cd366[_0x53afba(0x156)])[_0x53afba(0x182)]),'path_precision':_0x3cd366[_0x53afba(0x1a1)](parseInt,document[_0x53afba(0x183)+_0x53afba(0x1b6)](_0x3cd366[_0x53afba(0x12b)])[_0x53afba(0x182)])},_0x363318=new JSZip();try{for(let _0x327dec=0x2504+0x1*0x2197+-0x2d3*0x19;_0x3cd366[_0x53afba(0x18c)](_0x327dec,_0x26ea51[_0x53afba(0x103)]);_0x327dec++){const _0x4ad19c=_0x26ea51[_0x327dec],_0x13a26c='('+_0x3cd366[_0x53afba(0x147)](_0x327dec,0x1*-0x3a5+0xc0c+-0x866)+'/'+_0x26ea51[_0x53afba(0x103)]+')';console[_0x53afba(0x184)](_0x53afba(0x11f)+_0x4ad19c[_0x53afba(0x135)]+'\x20'+_0x13a26c+_0x53afba(0x11d)),_0x5ded94[_0x53afba(0x107)]=_0x53afba(0x130)+'\x20'+_0x4ad19c[_0x53afba(0x135)]+'\x20'+_0x13a26c;const _0x2bb16a=await _0x3cd366[_0x53afba(0x151)](_0x322f75,_0x4ad19c[_0x53afba(0x199)],_0x311d16);_0x363318[_0x53afba(0x122)](_0x4ad19c[_0x53afba(0x135)]+_0x53afba(0x114),_0x2bb16a);}_0x5ded94[_0x53afba(0x107)]=_0x3cd366[_0x53afba(0x173)];const _0x4e2881=await _0x363318[_0x53afba(0x126)+_0x53afba(0x16b)]({'type':_0x3cd366[_0x53afba(0x188)]}),_0x34ada2=URL[_0x53afba(0x139)+_0x53afba(0x16f)](_0x4e2881);_0x117e65[_0x53afba(0x16a)]=_0x34ada2,_0x117e65[_0x53afba(0xfd)]=_0x53afba(0x153)+_0x53afba(0x194)+'p',_0x117e65[_0x53afba(0x107)]=_0x53afba(0x17d)+_0x26ea51[_0x53afba(0x103)]+(_0x53afba(0x1b9)+_0x53afba(0x17f)),_0x117e65[_0x53afba(0x13c)][_0x53afba(0x1b3)](_0x3cd366[_0x53afba(0x161)]),_0x39c819[_0x53afba(0x189)]=_0x53afba(0x129)+'!\x20'+_0x26ea51[_0x53afba(0x103)]+(_0x53afba(0x15b)+_0x53afba(0xf4)+_0x53afba(0x1a3)+_0x53afba(0x1b0)+_0x53afba(0x176)+'>');}catch(_0x5f2c77){console[_0x53afba(0x149)](_0x5f2c77),_0x3cd366[_0x53afba(0x18a)](alert,_0x3cd366[_0x53afba(0x108)]),_0x39c819[_0x53afba(0x189)]=_0x53afba(0x158)+_0x53afba(0x137)+_0x53afba(0x171)+_0x53afba(0x1ab)+_0x53afba(0x14a)+_0x5f2c77[_0x53afba(0xf8)]+_0x53afba(0x1a5);}finally{_0x5ded94[_0x53afba(0x107)]=_0x3cd366[_0x53afba(0x17e)],_0x5ded94[_0x53afba(0x13b)]=![];}};}));
+document.addEventListener('DOMContentLoaded', function() {
+
+    // --- BAGIAN 1: LOGIKA LISENSI ---
+    // (Tidak ada perubahan di bagian ini, sudah bagus)
+    const KUNCI_RAHASIA_ANDA = "NDHADN-6BII6-BISBI23BICU-BKCSJ8BCKS";
+    const layarKunci = document.getElementById('layar-kunci');
+    const layarAplikasi = document.getElementById('layar-aplikasi');
+    const inputKunci = document.getElementById('input-kunci');
+    const tombolBuka = document.getElementById('tombol-buka');
+    const pesanError = document.getElementById('pesan-error');
+
+    function bukaAplikasi() {
+        layarKunci.classList.add('layar-sembunyi');
+        layarAplikasi.classList.remove('layar-sembunyi');
+    }
+
+    if (localStorage.getItem('kunci_valid') === 'iya') {
+        bukaAplikasi();
+    }
+
+    tombolBuka.onclick = function() {
+        if (inputKunci.value === KUNCI_RAHASIA_ANDA) {
+            localStorage.setItem('kunci_valid', 'iya');
+            bukaAplikasi();
+        } else {
+            pesanError.classList.remove('pesan-sembunyi');
+        }
+    };
+
+    // --- BAGIAN 2: LOGIKA MESIN VTRACER ---
+
+    // Ambil elemen aplikasi
+    const inputGambar = document.getElementById('input-gambar');
+    const infoFile = document.getElementById('info-file');
+    const tombolTrace = document.getElementById('tombol-trace');
+    const areaHasil = document.getElementById('area-hasil');
+    const tombolDownload = document.getElementById('tombol-download');
+    
+    // Variabel untuk menyimpan BANYAK data gambar
+    // Ini sekarang jadi array untuk menampung { data, nama }
+    let daftarGambar = [];
+
+    // --- FUNGSI BARU: Saat pengguna memilih gambar (BATCH) ---
+    inputGambar.onchange = async function(e) {
+        const files = e.target.files;
+        if (!files || files.length === 0) {
+            daftarGambar = [];
+            infoFile.innerText = "(Belum ada file dipilih)";
+            return;
+        }
+
+        infoFile.innerText = `Membaca ${files.length} gambar...`;
+        daftarGambar = []; // Kosongkan daftar lama
+        
+        // Buat array 'Promise' untuk membaca setiap file
+        const filePromises = Array.from(files).map(file => {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = new Image();
+                    img.onload = function() {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+                        const imageData = ctx.getImageData(0, 0, img.width, img.height);
+                        
+                        // Simpan nama file (tanpa ekstensi)
+                        const namaFile = file.name.split('.')[0]; 
+                        
+                        // Resolve dengan data dan nama
+                        resolve({ data: imageData, nama: namaFile });
+                    };
+                    img.onerror = reject;
+                    img.src = event.target.result;
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        });
+
+        // Tunggu semua file selesai dibaca
+        try {
+            daftarGambar = await Promise.all(filePromises);
+            infoFile.innerText = `${daftarGambar.length} gambar siap diproses!`;
+            console.log("Gambar siap diproses:", daftarGambar);
+        } catch (err) {
+            console.error("Gagal membaca file gambar:", err);
+            infoFile.innerText = "Gagal membaca salah satu gambar.";
+            alert("Gagal membaca salah satu file gambar. Coba lagi.");
+        }
+    };
+
+    // --- FUNGSI BARU: Helper untuk VTracer (INI ADALAH FIX UTAMA) ---
+    // Ini membungkus logika 'tick' yang rumit dalam Promise sederhana
+    function prosesGambarVTracer(imageData, settings) {
+        return new Promise((resolve, reject) => {
+            // Gunakan ColorImageConverter, BUKAN .convert()
+            const converter = new vectortracer.ColorImageConverter(imageData, settings);
+
+            function tick() {
+                try {
+                    // Cek progres
+                    converter.progress();
+                    
+                    if (converter.isFinished()) {
+                        const result = converter.getResult(); // Ambil hasil SVG
+                        converter.free(); // Bebaskan memori
+                        resolve(result);  // Selesaikan Promise
+                    } else {
+                        // Jika belum, cek lagi nanti.
+                        // setTimeout(tick, 0) membuatnya non-blocking
+                        setTimeout(tick, 0); 
+                    }
+                } catch (err) {
+                    converter.free(); // Bebaskan memori jika error
+                    reject(err); // Gagalkan Promise
+                }
+            }
+            
+            // Mulai proses
+            converter.init();
+            tick(); // Panggil 'tick' pertama
+        });
+    }
+
+    // --- FUNGSI BARU: Saat tombol "Proses" diklik (BATCH + ZIP) ---
+    tombolTrace.onclick = async function() {
+        if (!daftarGambar || daftarGambar.length === 0) {
+            alert("Pilih gambar dulu, dong!");
+            return;
+        }
+
+        tombolTrace.innerText = `Memproses ${daftarGambar.length} gambar...`;
+        tombolTrace.disabled = true;
+        areaHasil.innerHTML = "<p>Sedang memproses... Harap tunggu...</p>";
+        tombolDownload.classList.add('layar-sembunyi');
+
+        // Ambil nilai pengaturan dari input
+        const settings = {
+            filter_speckle: parseInt(document.getElementById('setting-speckle').value),
+            color_precision: parseInt(document.getElementById('setting-color').value),
+            path_precision: parseInt(document.getElementById('setting-path').value),
+        };
+
+        // Siapkan file ZIP
+        const zip = new JSZip();
+
+        try {
+            // Loop setiap gambar di dalam daftar
+            for (let i = 0; i < daftarGambar.length; i++) {
+                const item = daftarGambar[i];
+                const urutan = `(${i + 1}/${daftarGambar.length})`;
+                
+                console.log(`Memproses ${item.nama} ${urutan}...`);
+                tombolTrace.innerText = `Memproses: ${item.nama} ${urutan}`;
+                
+                // Panggil "MESIN" VTracer yang sudah diperbaiki
+                const hasilSVG = await prosesGambarVTracer(item.data, settings);
+                
+                // Tambahkan hasil SVG ke file ZIP
+                zip.file(`${item.nama}.svg`, hasilSVG);
+            }
+
+            // Setelah semua selesai, buat file ZIP
+            tombolTrace.innerText = "Membuat file ZIP...";
+            const blob = await zip.generateAsync({ type: 'blob' });
+            
+            // Siapkan link download untuk ZIP
+            const url = URL.createObjectURL(blob);
+            tombolDownload.href = url;
+            tombolDownload.download = `hasil-trace-batch.zip`;
+            tombolDownload.innerText = `Download ${daftarGambar.length} Hasil (.zip)`;
+            tombolDownload.classList.remove('layar-sembunyi');
+
+            areaHasil.innerHTML = `<p>Selesai! ${daftarGambar.length} gambar berhasil diproses dan siap di-download.</p>`;
+
+        } catch (err) {
+            console.error(err);
+            alert("Waduh, ada error! Coba lagi.");
+            areaHasil.innerHTML = `<p style="color:var(--warna-error);">Error: ${err.message}</p>`;
+        } finally {
+            tombolTrace.innerText = "Proses Jadi Vektor!";
+            tombolTrace.disabled = false;
+        }
+    };
+});
