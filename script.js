@@ -1,5 +1,5 @@
-// --- PERUBAHAN 1: KITA IMPORT SEMUA FUNGSI 'DAPUR' ---
-import * as vectortracer_bg from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.js';
+// --- PERBAIKAN 1: Impor 'init' (si Manajer) dan 'BinaryImageConverter' (alatnya) ---
+import init, { BinaryImageConverter } from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer.js';
 
 // --- BAGIAN 1: LOGIKA LISENSI ---
 // (Ini semua sama, tidak ada yg berubah)
@@ -24,23 +24,12 @@ async function inisialisasiAplikasi() {
     try {
         areaHasil.innerHTML = "<p>Memuat komponen inti VTracer...</p>";
         
-        // --- PERUBAHAN 2: INI ADALAH CARA YANG BENAR ---
-        
-        // Buat 'Import Object'. Ini adalah 'Si Dapur' ('_bg.js')
-        // yang akan kita berikan ke 'Si Koki' ('.wasm')
-        const importObject = {
-            './vectortracer_bg.js': vectortracer_bg
-        };
-
-        // Kita 'fetch' file .wasm (Si Koki)
-        const wasmResponse = await fetch('https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
-        
-        // Kita "Nyalakan" Si Koki, dan kita "Suapi" dia dengan Si Dapur
-        // Ini akan menyelesaikan error 'Imports argument must be present'
-        const wasmModule = await WebAssembly.instantiateStreaming(wasmResponse, importObject);
-        
-        // "Hubungkan" mereka berdua agar bisa saling memanggil
-        vectortracer_bg.__wbg_set_wasm(wasmModule.instance.exports);
+        // --- PERBAIKAN 2: Panggil 'init' dan berikan URL .wasm ---
+        // Fungsi 'init' (Manajer) akan menangani semua proses 'fetch'
+        // dan 'instantiate' yang rumit secara otomatis.
+        // Kita berikan URL lengkap file .wasm agar dia tidak bingung mencarinya.
+        const wasmUrl = 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm';
+        await init(wasmUrl);
         
         areaHasil.innerHTML = "<p>Komponen berhasil dimuat. Silakan pilih gambar.</p>";
     } catch (err) {
@@ -110,9 +99,9 @@ async function inisialisasiAplikasi() {
     function prosesGambarVTracer(imageData, settings) {
         return new Promise((resolve, reject) => {
             
-            // --- PERUBAHAN 3: GUNAKAN NAMA YANG BENAR ---
-            // 'BinaryImageConverter' adalah properti dari 'vectortracer_bg'
-            const converter = new vectortracer_bg.BinaryImageConverter(imageData, settings);
+            // --- PERBAIKAN 3: Gunakan 'BinaryImageConverter' langsung ---
+            // Kita sudah mengimpornya di baris paling atas file ini
+            const converter = new BinaryImageConverter(imageData, settings);
             
             function tick() {
                 try {
