@@ -1,3 +1,6 @@
+// --- TAMBAHKAN BARIS INI DI PALING ATAS ---
+import * as vectortracer from 'https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer.js';
+
 // --- BAGIAN 1: LOGIKA LISENSI ---
 // Ini dijalankan pertama kali, memastikan layar kunci berfungsi.
 
@@ -23,8 +26,11 @@ async function inisialisasiAplikasi() {
     // 2. Muat komponen inti VTracer (WASM)
     try {
         areaHasil.innerHTML = "<p>Memuat komponen inti VTracer...</p>";
-        // Kita gunakan CDN dari unpkg untuk memuat file .wasm
-        await vectortracer.default('https://unpkg.com/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
+        
+        // --- UBAH BARIS INI ---
+        // Kita gunakan CDN dari cdn.jsdelivr.net (bukan unpkg) agar konsisten
+        await vectortracer.default('https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/pkg/vectortracer_bg.wasm');
+        
         areaHasil.innerHTML = "<p>Komponen berhasil dimuat. Silakan pilih gambar.</p>";
     } catch (err) {
         console.error("Gagal memuat file VTracer .wasm!", err);
