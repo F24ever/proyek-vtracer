@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', async function() {
+// Kita bungkus semuanya dalam fungsi async 'IIFE'
+// Ini lebih rapi dan aman
+(async function() {
 
     // PERBAIKAN FINAL (GANTI CDN KE UNPKG):
     try {
@@ -12,6 +14,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     
     // --- BAGIAN 1: LOGIKA LISENSI ---
+    // Kode ini aman dijalankan di sini karena script.js pakai 'defer',
+    // yang artinya DOM sudah pasti siap.
     const KUNCI_RAHASIA_ANDA = "NDHADN-6BII6-BISBI23BICU-BKCSJ8BCKS";
     const layarKunci = document.getElementById('layar-kunci');
     const layarAplikasi = document.getElementById('layar-aplikasi');
@@ -135,7 +139,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         try {
             for (let i = 0; i < daftarGambar.length; i++) {
-                const item = daftarGambar[i];
+                const item = daftarGambar.length;
                 const urutan = `(${i + 1}/${daftarGambar.length})`;
                 console.log(`Memproses ${item.nama} ${urutan}...`);
                 tombolTrace.innerText = `Memproses: ${item.nama} ${urutan}`;
@@ -163,4 +167,6 @@ document.addEventListener('DOMContentLoaded', async function() {
             tombolTrace.disabled = false;
         }
     };
-});
+
+// Ini adalah penutup dari (async function() { ... })
+})();
