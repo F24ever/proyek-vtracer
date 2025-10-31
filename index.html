@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi VTracer Keren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="layar-kunci">
+        <h1>Aplikasi VTracer Keren</h1>
+        <p>Silakan masukkan Kunci Lisensi untuk membuka aplikasi.</p>
+        <p>Belum punya kunci? Hubungi saya via WA di 08xx-xxxx-xxxx</p>
+        <input type="password" id="input-kunci" placeholder="Masukkan kuncimu...">
+        <button id="tombol-buka">Buka Akses</button>
+        <p id="pesan-error" class="pesan-sembunyi">Kunci Salah! Coba lagi.</p>
+    </div>
+
+    <div id="layar-aplikasi" class="layar-sembunyi">
+        <h1>VTracer Siap!</h1>
+        <p>Upload gambar (JPG/PNG) untuk diubah jadi SVG.</p>
+        
+        <input type="file" id="input-gambar" accept="image/jpeg,image/png">
+        
+        <h3>Pengaturan:</h3>
+        <div>
+            <label>Filter Bintik (0-20):</label>
+            <input type="number" id="setting-speckle" value="8" min="0" max="20">
+        </div>
+        <div>
+            <label>Presisi Warna (1-8):</label>
+            <input type="number" id="setting-color" value="6" min="1" max="8">
+        </div>
+        <div>
+            <label>Kehalusan Garis (0-10):</label>
+            <input type="number" id="setting-path" value="2" min="0" max="10">
+        </div>
+
+        <button id="tombol-trace">Proses Jadi Vektor!</button>
+
+        <hr>
+        
+        <h2>Hasil:</h2>
+        <div id="area-hasil">
+            </div>
+        <a id="tombol-download" class="layar-sembunyi">Download Hasil SVG</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vectortracer@0.1.2/dist/index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
