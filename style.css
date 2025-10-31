@@ -1,49 +1,180 @@
+/* Import font untuk tampilan lebih modern */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* --- Palet Warna Tema Gelap --- */
+:root {
+    --warna-latar: #0d1117;     /* Hitam / GitHub Dark */
+    --warna-kontainer: #161b22;  /* Biru Tua (Card) */
+    --warna-border: #30363d;
+    --warna-teks-utama: #c9d1d9;   /* Putih keabuan (kontras tinggi) */
+    --warna-teks-kedua: #8b949e;   /* Abu-abu (kontras sedang) */
+    --warna-biru-muda: #33a1ff;   /* Biru Muda (Aksen) */
+    --warna-biru-hover: #1f6feb;   /* Biru Tua (Aksen Hover) */
+    --warna-error: #f85149;
+}
+
+/* --- Pengaturan Dasar --- */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--warna-latar);
+    color: var(--warna-teks-utama);
     text-align: center;
     padding: 20px;
+    margin: 0;
+    line-height: 1.6;
 }
-div {
-    background: #fff;
+
+h1, h2, h3 {
+    color: var(--warna-teks-utama);
+    font-weight: 700;
+}
+
+p {
+    color: var(--warna-teks-kedua);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--warna-border);
+    margin: 30px 0;
+}
+
+/* --- Kontainer Utama --- */
+.container {
+    background: var(--warna-kontainer);
+    border: 1px solid var(--warna-border);
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
     max-width: 600px;
     margin: 20px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    text-align: left;
 }
-input[type="file"], input[type="password"], input[type="number"], button, a {
+
+/* --- Tombol dan Input --- */
+input[type="password"],
+input[type="number"] {
     font-size: 16px;
     padding: 10px 15px;
-    margin: 10px 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid var(--warna-border);
+    background-color: var(--warna-latar);
+    color: var(--warna-teks-utama);
+    width: 100%;
+    box-sizing: border-box; /* Agar padding tidak merusak layout */
 }
-button, a {
-    background-color: #007bff;
-    color: white;
+
+input[type="number"] {
+    width: 80px;
+    text-align: center;
+}
+
+/* Tombol Utama */
+button, .tombol-download {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--warna-biru-muda);
+    color: var(--warna-latar);
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
-button:hover, a:hover {
-    background-color: #0056b3;
+
+button:hover, .tombol-download:hover {
+    background-color: var(--warna-biru-hover);
+    color: white; /* Ganti ke putih agar kontras di hover */
 }
-hr {
-    border: none;
-    border-top: 1px solid #eee;
-    margin: 20px 0;
+
+button:disabled {
+    background-color: var(--warna-teks-kedua);
+    color: var(--warna-latar);
+    cursor: not-allowed;
 }
-#area-hasil svg {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #eee;
+
+button:active, .tombol-download:active {
+    transform: scale(0.98);
 }
+
+/* Kustomisasi Tombol Upload File */
+.tombol-file {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: 1px dashed var(--warna-biru-muda);
+    background-color: transparent;
+    color: var(--warna-biru-muda);
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.tombol-file:hover {
+    background-color: rgba(51, 161, 255, 0.1);
+    color: white;
+}
+input[type="file"] {
+    display: none; /* Sembunyikan input aslinya */
+}
+#info-file {
+    font-size: 14px;
+    color: var(--warna-teks-kedua);
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/* --- Bagian Lain --- */
+#layar-kunci {
+    text-align: center;
+}
+
+.grup-pengaturan {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--warna-latar);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 15px 0;
+}
+.grup-pengaturan div {
+    text-align: center;
+    margin: 10px;
+}
+.grup-pengaturan label {
+    display: block;
+    font-size: 14px;
+    color: var(--warna-teks-kedua);
+    margin-bottom: 5px;
+}
+
+#area-hasil {
+    border: 1px dashed var(--warna-border);
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 10px;
+    min-height: 50px;
+    text-align: center;
+    color: var(--warna-teks-kedua);
+}
+
+/* --- Kelas Utilitas --- */
 .layar-sembunyi {
     display: none;
 }
 .pesan-sembunyi {
     display: none;
-    color: red;
+    color: var(--warna-error);
+    font-size: 14px;
+    margin-top: 10px;
 }
